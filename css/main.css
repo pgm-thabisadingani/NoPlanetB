@@ -1,0 +1,749 @@
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'), url('../fonts/poppins-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/poppins-light-webfont.woff2') format('woff2'), url('../fonts/poppins-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/poppins-lightitalic-webfont.woff2') format('woff2'), url('../fonts/poppins-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    traform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppins', 'sans-serif';
+  line-height: 1.25;
+  font-size: 1rem;
+  color: #423c52;
+  width: 100%;
+}
+
+header {
+  background-color: #04C4D9;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.containers {
+  max-width: 100%;
+}
+
+.div__width {
+  width: 60rem;
+  padding: 0 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.planetB__main--second {
+  background-color: #fe552f;
+  padding: 2rem 0rem;
+}
+
+.main__second--inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.planetB__main--first {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.first__main--title {
+  padding: 1rem;
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.first__main--bike {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.bike {
+  flex-basis: 20rem;
+  flex-grow: 1;
+}
+
+.first__main--text {
+  flex-basis: 17rem;
+  flex-grow: 1;
+}
+
+.grey__background {
+  background-color: #ddd;
+}
+
+.darkgray__background {
+  background-color: #423c52;
+}
+
+.planetB__footer--bottom {
+  background-color: #000000;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.planetB__nav--logo {
+  display: flex;
+  flex-basis: 19rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: #fff;
+}
+
+.logo svg {
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.planetB__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.planetB__nav--manu {
+  align-self: center;
+  flex-basis: 25rem;
+}
+
+.planetB__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.polar__bear {
+  width: 48rem;
+  transform: translate(-2rem, 1.5rem);
+}
+
+.polar__text {
+  transform: translate(-3rem, 0.5rem);
+}
+
+.second__main--title {
+  flex-basis: 100%;
+  color: #fff;
+}
+
+.steven__hawking {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.steven_hawking--message {
+  flex-basis: 36rem;
+  flex-grow: 1;
+}
+
+.steven_hawking--img {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 9rem;
+}
+
+.movingArr {
+  transition: margin-right 0.2s ease;
+}
+
+.animals {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  flex-basis: 15rem;
+  box-shadow: 0px 22px 38px -25px rgba(0, 0, 0, 0.75);
+  margin-left: 0.5rem;
+  margin-bottom: 2.5rem;
+  background-color: white;
+  flex-grow: 1;
+}
+
+.card__inner {
+  padding: 1rem;
+  position: relative;
+}
+
+.update {
+  background-color: #ff0000;
+  padding: 0.5rem;
+  color: white;
+  position: absolute;
+  right: 1rem;
+  top: -1.5rem;
+}
+
+.movingArr:hover {
+  margin-right: 1rem
+}
+
+.margin-right {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.margin-right:hover {
+  /* padding-bottom: 0.5rem;
+  */
+  border-bottom: 1.5px #04C4D9 solid;
+  /* border-spacing: 1rem;
+  */
+}
+
+.clock__now {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 9rem;
+  background-color: #ddd;
+  align-items: center;
+  border-radius: 2rem;
+  font-style: italic;
+  justify-content: space-evenly;
+  padding: 0.2rem;
+}
+
+.clock {
+  background-image: url(../img/clock.svg);
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 0.8rem
+}
+
+.rotation {
+  margin: 2rem 0rem;
+}
+
+/*spinning globe*/
+.spinner {
+  background-image: url(../img/climate-change.svg);
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.orbit {
+  position: relateve;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.earth-orbit {
+  width: 6rem;
+  height: 6rem;
+  animation: spin 12s linear 0s infinite;
+}
+
+.moon {
+  background-image: url(../img/moon.svg);
+  background-size: 0.6rem;
+  background-repeat: no-repeat;
+  top: -0.5rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+.atmosphere__text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.planetB__footer--links {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.footer__links--inner {
+  flex-basis: 13rem;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.links__social {
+  flex: 2;
+  /* height: 2rem;
+  */
+}
+
+.social {
+  width: 3rem;
+  height: 3rem;
+}
+
+header h2 {
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.firts__text--inner h3 {
+  border-bottom: 1px solid black;
+  padding-bottom: 0rem;
+}
+
+.planetB__nav--logo span {
+  color: #04C4D9;
+}
+
+.planetB__nav--logo h2 {
+  width: 9rem;
+}
+
+.firts__text--inner:nth-of-type(1) h3 {
+  width: 7rem;
+}
+
+.firts__text--inner:nth-of-type(2) h3 {
+  width: 9rem;
+}
+
+.firts__text--inner:nth-of-type(3) h3 {
+  width: 3rem;
+}
+
+.firts__text--inner p {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bike svg {
+  width: 20rem;
+  height: 20rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+main h2 {
+  font-size: 2rem;
+}
+
+main h2,
+h3 {
+  padding: 1rem 0rem;
+}
+
+.planetB__nav--manu ul {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+.planetB__nav--manu a {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.planetB__nav--manu button:only-child {
+  font-size: 1.1rem;
+  background-color: #423c52;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #423c52;
+  border: 1px #04C4D9 solid;
+  align-self: center;
+}
+
+.planetB__nav--manu button:only-child:hover {
+  background-color: #04C4D9;
+  color: #423c52;
+}
+
+.steven_hawking--img img {
+  border: solid 0.2rem white;
+  border-radius: 50%;
+  width: 10rem;
+  padding: 0.5rem;
+  margin-right: 2rem;
+}
+
+.steven_hawking--img p {
+  align-self: center;
+  font-size: 1.1rem;
+  color: white;
+  padding-top: 1rem;
+}
+
+.steven_hawking--message .speech__arrow {
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  transform: translateX(-1rem) translateY(6rem) rotate(45deg);
+}
+
+.steven_hawking--message p {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.card__inner p:nth-of-type(2),
+.card__text {
+  padding: 1rem 0rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.blog>h2 {
+  margin: 2rem 0rem;
+}
+
+.atmosphere__text p {
+  padding: 1rem;
+  flex-basis: 20rem;
+  flex-grow: 1;
+}
+
+.spinner img {
+  width: 8rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.links__social ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.planetB__footer--links a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.links__social svg {
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  fill: white;
+}
+
+.planetB__footer--copyright {
+  text-align: center;
+}
+
+@media(min-width: 10rem) {
+  .planetB__nav--manu ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+  }
+
+  .planetB__nav--manu button:only-child {
+    padding: 1rem;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+
+  .planetB__nav--manu {
+    align-self: center;
+    flex-grow: 1;
+    flex-basis: 25rem;
+  }
+
+  .planetB__nav--manu li {
+    flex-grow: 1;
+    flex-basis: 25rem;
+  }
+
+  .planetB__nav--manu li:last-of-type {
+    align-self: center;
+    width: 100%;
+  }
+
+  .planetB__header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+    overflow: hidden;
+  }
+
+  .polar__bear {
+    width: 72rem;
+    transform: translate(-7rem, 8.5rem);
+    overflow: cut;
+  }
+
+  .polar__bear svg {
+    width: 54rem;
+  }
+
+  .polar__text {
+    transform: translate(1rem, 3rem);
+  }
+
+  .polar__text h1 {
+    font-size: 3rem;
+    padding-right: 1.5rem;
+  }
+
+  .bike svg {
+    height: 11rem
+  }
+
+  .steven_hawking--message .speech__arrow {
+    transform: translateX(5rem) translateY(1rem) rotate(45deg);
+  }
+}
+
+@media(min-width: 20rem) {
+  .planetB__nav--logo {
+    display: flex;
+    flex-basis: 20rem;
+  }
+
+  .planetB__nav--manu ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+  }
+
+  .planetB__nav--manu button:only-child {
+    padding: 1rem;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+
+  .planetB__nav--manu {
+    align-self: center;
+    flex-grow: 1;
+    flex-basis: 25rem;
+  }
+
+  .planetB__nav--manu li {
+    flex-grow: 1;
+    flex-basis: 25rem;
+  }
+
+  .planetB__nav--manu li:last-of-type {
+    align-self: center;
+    width: 100%;
+  }
+
+  .polar__text {
+    transform: translate(rem, 3rem);
+  }
+
+  .bike svg {
+    /* width: 20rem;
+      */
+    height: 20rem;
+  }
+
+  .steven_hawking--img {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .steven_hawking--message .speech__arrow {
+    transform: translateX(5rem) translateY(1rem) rotate(45deg);
+  }
+}
+
+@media(min-width: 30rem) {
+  .planetB__nav--manu ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: left;
+  }
+
+  .planetB__nav--logo {
+    display: flex;
+    flex-basis: 25rem;
+  }
+
+  .planetB__nav--manu button:only-child {
+    padding: 0.5rem;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+
+  .planetB__nav--manu {
+    align-self: center;
+    flex-grow: 0;
+    flex-basis: 100%;
+  }
+
+  .margin-right {
+    margin: 0.5rem;
+  }
+
+  .polar__text {
+    transform: translate(-1rem, 3rem);
+  }
+
+  .steven_hawking--img {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .polar__text h1 {
+    font-size: 3rem;
+  }
+
+  .planetB__nav--manu li {
+    flex-basis: 6rem;
+    flex: 1 0 auto;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .planetB__nav--manu li:last-of-type {
+    align-self: center;
+    width: 7rem;
+  }
+
+  .bike svg {
+    width: 28rem;
+    height: 18rem;
+  }
+
+  .steven_hawking--message .speech__arrow {
+    transform: translateX(5rem) translateY(1rem) rotate(45deg);
+  }
+}
+
+@media(min-width: 40rem) {
+  nav {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+  }
+
+  .planetB__nav--manu {
+    align-self: center;
+    flex-grow: 1;
+    flex-basis: 27rem;
+  }
+
+  .planetB__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 2rem;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .polar__bear {
+    width: 26rem;
+    transform: translate(-6rem, 4rem);
+  }
+
+  .polar__bear svg {
+    width: 35rem;
+  }
+
+  .polar__bear svg:hover {
+    animation: swing ease-in-out 2s;
+    transform-origin: center;
+  }
+
+  .polar__text {
+    transform: translate(0rem, 0.5rem);
+  }
+
+  .bike svg {
+    width: 28rem;
+    height: 20rem
+  }
+
+  .steven_hawking--img {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .steven_hawking--message .speech__arrow {
+    transform: translateX(5rem) translateY(1rem) rotate(45deg);
+  }
+}
+
+@media(min-width: 50rem) {
+  .steven_hawking--img {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .steven_hawking--message .speech__arrow {
+    transform: translateX(-1rem) translateY(6rem) rotate(45deg);
+  }
+}
