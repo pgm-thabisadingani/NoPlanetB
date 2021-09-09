@@ -75,7 +75,7 @@ li {
 
 .div__width {
   width: 60rem;
-  padding: 0 1rem;
+  padding: 1rem 1rem 0;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -131,6 +131,7 @@ li {
 .planetB__footer--bottom {
   background-color: #000000;
   color: #fff;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -322,6 +323,7 @@ li {
   justify-content: flex-start;
   flex-wrap: wrap;
   color: #fff;
+  padding-bottom: 1rem;
 }
 
 .footer__links--inner {
