@@ -324,6 +324,7 @@ li {
   flex-wrap: wrap;
   color: #fff;
   padding-bottom: 1rem;
+  margin-top: -1rem;
 }
 
 .footer__links--inner {
